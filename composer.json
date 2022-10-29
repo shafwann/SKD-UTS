@@ -1,0 +1,12 @@
+{
+    "name": "skd/kelompok3",
+    "require": {
+        "miladrahimi/phpcrypt": "^5.0"
+    },
+    "authors": [
+        {
+            "name": "Shafwan Eksa Jayadi",
+            "email": "shafwaneksajayadi@student.uns.ac.id"
+        }
+    ]
+}
