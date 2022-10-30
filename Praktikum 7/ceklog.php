@@ -13,6 +13,7 @@ if (isset($_POST['login'])) {
     $result = mysqli_query($conn, $sql);
     if ($result->num_rows > 0) {
         $row = mysqli_fetch_assoc($result);
+        $_SESSION['login'] = true;
         header("Location: index.php");
     } else {
         echo "<script>alert('Email atau password Anda salah. Silahkan coba lagi!')</script>";

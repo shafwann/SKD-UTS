@@ -6,7 +6,7 @@
     <title>Sign Up</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style1.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600" rel="stylesheet" type="text/css" />
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -27,13 +27,7 @@
                     <input type="text" name="username" placeholder="Username" required>
                 </div>
                 <div>
-                    <input type="text" name="alamat" placeholder="Address" required>
-                </div>
-                <div>
                     <input type="email" name="email" placeholder="Email" required>
-                </div>
-                <div>
-                    <input type="number" name="nomor" placeholder="No Telp" required>
                 </div>
                 <div>
                     <input type="password" name="password" placeholder="Password" required>

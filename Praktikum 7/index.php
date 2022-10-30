@@ -1,9 +1,22 @@
+<?php
+
+require("koneksi.php");
+require("ceklog.php");
+error_reporting(0);
+session_start();
+
+if (!isset($_SESSION['login'])) {
+    header("Location: login.php");
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <html>
 
 <head>
-    <title>Login</title>
+    <title>Sign Up</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="style1.css" />
@@ -18,20 +31,11 @@
 
     <div class="login-page">
         <div class="form">
-            <form action="ceklog.php" method="POST">
-                <div>
-                    <h2>Login</h2>
-                </div>
+            <form action="cekout.php" method="POST">
                 <lottie-player src="https://assets4.lottiefiles.com/datafiles/XRVoUu3IX4sGWtiC3MPpFnJvZNq7lVWDCa8LSqgS/profile.json" background="transparent" speed="1" style="justify-content: center" loop autoplay></lottie-player>
-                <div>
-                    <input type="text" name="username" placeholder="Username" required>
-                </div>
-                <div>
-                    <input type="password" name="password" placeholder="Password" required>
-                </div>
                 <br>
                 <br>
-                <button type="submit" name="login">Masuk</button>
+                <button type="submit" name="logout">Logout</button>
             </form>
         </div>
     </div>
